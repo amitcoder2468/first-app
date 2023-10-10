@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Togglebtn">
+    <TextView
+        android:id="@+id/tvdata"
+        android:background="@color/gold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvdata1"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvdata2"
+        android:background="@color/yelllow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvdata3"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:id="@+id/wifi_togglebtn"
+        android:layout_height="wrap_content"
+        android:textOff="WIFI Disabled"
+        android:textOn="WIFI Enabled"
+        android:onClick="getValuesFromToggleBtn"/>
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:id="@+id/wifiswitch"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:layout_marginTop="30sp"
+        android:onClick="getvaluefromswitch"
+        />
+</LinearLayout>
